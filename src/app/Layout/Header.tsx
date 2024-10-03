@@ -1,5 +1,5 @@
 import logo from '../../Images/logoApun.png';
-import '../../CSS/style.css';
+// import '../../CSS/style.css';
 const Header = () => {
   return (
     <div style={{marginBottom: "100px"}}>
