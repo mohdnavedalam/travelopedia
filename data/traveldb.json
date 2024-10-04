@@ -1,0 +1,28 @@
+{
+    "destination": [
+        {
+            "id": 1,
+            "city": "New York",
+            "country": "USA",
+            "days": 3
+        },
+        {
+            "id": 2,
+            "city": "Chicago",
+            "country": "USA",
+            "days": 5
+        }
+    ],
+    "people": [
+        {
+            "id": 1,
+            "name": "Peter Parker",
+            "city":"New York"
+        },
+        {
+            "id": 2,
+            "name": "Clarke Kent",
+            "city": "Metropolis"
+        }
+    ]
+}
