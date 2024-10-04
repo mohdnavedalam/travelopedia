@@ -9,13 +9,17 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './CSS/style.css';
 import DestinationIndex from './app/Components/DestinationIndex';
+import { ApiProvider } from '@reduxjs/toolkit/dist/query/react';
+import { DestinationApi } from './api/DestinationApi';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
   <React.StrictMode>
-    <Header />
-    <DestinationIndex />
-    <FooterMarginTop />
-    <Footer />
+    <ApiProvider api={DestinationApi}>
+      <Header />
+      <DestinationIndex />
+      <FooterMarginTop />
+      <Footer />
+    </ApiProvider>
   </React.StrictMode>
 );
