@@ -8,7 +8,7 @@ export const DestinationApi = createApi({
         // QUERY -> GET
         // MUTATION -> POST/PUT/DELETE
         getAllDestinations: builder.query({
-            query: () => "destination",
+            query: () => "destination"
         }),
     }),
 });
