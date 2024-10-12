@@ -10,12 +10,12 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import './CSS/style.css';
 import DestinationIndex from './app/Components/DestinationIndex';
 import { ApiProvider } from '@reduxjs/toolkit/dist/query/react';
-import { DisplayApi } from './api/DisplayApi';
+import { DestinationApi } from './api/DestinationApi';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
   <React.StrictMode>
-    <ApiProvider api={DisplayApi}>
+    <ApiProvider api={DestinationApi}>
       <Header />
       <DestinationIndex />
       <FooterMarginTop />

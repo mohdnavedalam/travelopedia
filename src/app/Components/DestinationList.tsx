@@ -1,5 +1,5 @@
 import React from "react";
-import { useGetAllDestinationsQuery } from "../../api/DisplayApi";
+import { useGetAllDestinationsQuery } from "../../api/DestinationApi";
 
 const DestinationList = () => {
     const {data, isLoading, isSuccess, isError, /*error*/} = useGetAllDestinationsQuery(''); // wrok on error pending
