@@ -3,14 +3,16 @@ import { useState } from "react";
 const AddDestination = () => {
     const [newCity, setNewCity] = useState("");
     const [newCountry, setNewCountry] = useState("");
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = (e: React.FormEvent<HTMLButtonElement>) => {
         e.preventDefault();
         // addDestination
         setNewCity("");
         setNewCountry("");
+        //console.log("City" + " " + newCity);
     };
     const handleChangeCity = (e: React.ChangeEvent<HTMLInputElement>) => {
         setNewCity(e.target.value);
+        //console.log(e.target.value);
     }
     return (
         <div className="p-4 ms-1 border">

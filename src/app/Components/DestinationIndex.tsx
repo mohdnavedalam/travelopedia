@@ -8,7 +8,7 @@ const DestinationIndex = () => {
             <h2 className="text text-center">Travel List</h2>
             <AddDestination />
             <DestinationList />
-            <PeopleList />
+            {/* <PeopleList /> */}
         </div>
     );
 };
