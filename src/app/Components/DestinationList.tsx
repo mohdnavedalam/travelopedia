@@ -2,7 +2,7 @@ import React from "react";
 import { useGetAllDestinationsQuery } from "../../api/DestinationApi";
 
 const DestinationList = () => {
-    const {data, isLoading, isSuccess, isError, /*error*/} = useGetAllDestinationsQuery(''); // wrok on error pending
+    const {data, isLoading, isSuccess, isError, /*error*/} = useGetAllDestinationsQuery(''); // work on error pending
     let content;
     if (isLoading) {
         content = <p>Loading ...</p>;
