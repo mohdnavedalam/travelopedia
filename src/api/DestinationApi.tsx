@@ -4,11 +4,13 @@ export const DestinationApi = createApi({
     // reducerPath: "api",
     reducerPath: "apidestination",
     baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:5001/" }),
+    tagTypes: ["Destinations"],
     endpoints: (builder) => ({
         // QUERY -> GET
         // MUTATION -> POST/PUT/DELETE
         getAllDestinations: builder.query({
-            query: () => "destination"
+            query: () => "destination",
+            providesTags: ["Destinations"],
         }),
         // getDestinationById: builder.query({
         //     query: ({id}) => ({
@@ -22,21 +24,24 @@ export const DestinationApi = createApi({
                 url: "destination",
                 method: "POST",
                 body: destination
-            })
+            }),
+            invalidatesTags: ["Destinations"],
         }),
         updateDestination: builder.mutation({
             query: (destination) => ({
                 url: `destination/${destination.id}`,
                 method: "PUT",
                 body: destination
-            })
+            }),
+            invalidatesTags: ["Destinations"],
         }),
         deleteDestination: builder.mutation({
             query: ({id}) => ({
                 url: `destination/${id}`,
                 method: "DELETE",
                 body: id
-            })
+            }),
+            invalidatesTags: ["Destinations"],
         }),
     }),
 });

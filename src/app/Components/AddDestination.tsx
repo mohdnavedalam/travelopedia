@@ -1,22 +1,30 @@
 import { useState } from "react";
 import { useAddDestinationMutation } from "../../api/DestinationApi";
 
+var emptyMessage = "";
+
 const AddDestination = () => {
     const [newCity, setNewCity] = useState("");
     const [newCountry, setNewCountry] = useState("");
     const [addDestinationMutation, /*results*/] = useAddDestinationMutation();
-
+    
     const handleSubmit = (e: React.FormEvent<HTMLButtonElement>) => {
+        
         e.preventDefault();
-        // addDestination
-        addDestinationMutation({
-            id: Math.random() * 100,
-            city: newCity,
-            country: newCountry,
-            days: Math.random() * 10 + 1,
-        });
-        setNewCity("");
-        setNewCountry("");
+        if (newCity !== "" && newCountry !== "") {
+            // addDestination
+            addDestinationMutation({
+                id: Math.random() * 100,
+                city: newCity,
+                country: newCountry,
+                days: Math.random() * 10 + 1,
+            });
+            setNewCity("");
+            setNewCountry("");
+        }
+        // else {
+        //     emptyMessage = "enter values";
+        // }
         //console.log("City" + " " + newCity);
     };
     const handleChangeCity = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -38,7 +46,7 @@ const AddDestination = () => {
                         />
                     </div>
                     <div className="col-5 p-1">
-                        <input 
+                        <input
                             type="text"
                             className="form-control"
                             placeholder="enter country ..."
@@ -49,6 +57,8 @@ const AddDestination = () => {
                     <div className="col-2 p-1">
                         <button className="btn btn-success form-control" onClick={handleSubmit}>Add</button>
                     </div>
+                    {/* {emptyMessage === "" && <div className=" text text-warning text-center"><p>{emptyMessage}</p></div>} */} 
+                    {/*pending*/}
                 </div>
             </form>
         </div>
