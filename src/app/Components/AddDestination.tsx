@@ -14,10 +14,10 @@ const AddDestination = () => {
         if (newCity !== "" && newCountry !== "") {
             // addDestination
             addDestinationMutation({
-                id: Math.random() * 100,
+                id: (Math.random() * 100).toString(),
                 city: newCity,
                 country: newCountry,
-                days: Math.random() * 10 + 1,
+                days: (Math.random() * 10 + 1).toString(),
             });
             setNewCity("");
             setNewCountry("");

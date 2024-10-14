@@ -1,54 +1,5 @@
 {
-  "destination": [
-    {
-      "id": 55.31906750703921,
-      "city": "Allahabad",
-      "country": "India",
-      "days": 9.65886535393193
-    },
-    {
-      "id": 49.415424212349656,
-      "city": "New Delhi",
-      "country": "India",
-      "days": 6.649685198443528
-    },
-    {
-      "id": 0.5616428196891747,
-      "city": "as",
-      "country": "sa",
-      "days": 10.98619530387997
-    },
-    {
-      "id": 2.6531974040420403,
-      "city": "df",
-      "country": "fd",
-      "days": 5.517297832708504
-    },
-    {
-      "id": 81.25376610269186,
-      "city": "Lucknow",
-      "country": "India",
-      "days": 7.488033669675768
-    },
-    {
-      "id": 66.825290755773,
-      "city": "asd",
-      "country": "asd",
-      "days": 3.822415316193303
-    },
-    {
-      "id": 13,
-      "city": "New York",
-      "country": "USA",
-      "days": 2
-    },
-    {
-      "id": 88.18025712060202,
-      "city": "dkfjvb",
-      "country": "sldfkjbq",
-      "days": 3.652840476027658
-    }
-  ],
+  "destination": [],
   "people": [
     {
       "id": "1",

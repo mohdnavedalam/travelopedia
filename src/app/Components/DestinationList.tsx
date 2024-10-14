@@ -1,12 +1,12 @@
-import React from "react";
+import React, { FormEvent } from "react";
 import { useGetAllDestinationsQuery } from "../../api/DestinationApi";
 import { useDeleteDestinationMutation } from "../../api/DestinationApi";
 
 const DestinationList = () => {
     const { data, isLoading, isSuccess, isError, /*error*/ } = useGetAllDestinationsQuery(''); // work on error pending
     const [deleteDestinationMutation] = useDeleteDestinationMutation();
-    const handleDelete = (id: number) => {
-        deleteDestinationMutation({ id });
+    const handleDelete = (id: string) => {
+        deleteDestinationMutation(id);
     };
     let content;
     if (isLoading) {
@@ -29,6 +29,7 @@ const DestinationList = () => {
                     <div className="col-2">
                         <button className="btn btn-danger form-control" onClick={() => handleDelete(destination.id)}>Delete</button>
                         {/* <button className="btn btn-danger form-control" onClick={() => deleteDestinationMutation({id: destination.id})}>Delete</button> */}
+                        {/* <button className="btn btn-danger form-control" onClick={() => deleteDestinationMutation(destination.id)}>Delete</button> */}
                     </div>
                 </div>
             );
