@@ -12,6 +12,7 @@ import DestinationIndex from './app/Components/DestinationIndex';
 import { Provider } from 'react-redux';
 import { store } from './redux/store';
 import RandomDestination from './app/Components/RandomDestination';
+import PeopleList from './app/Components/PeopleList';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
@@ -20,6 +21,7 @@ root.render(
       <Header />
       <DestinationIndex />
       <RandomDestination />
+      <PeopleList />
       <FooterMarginTop />
       <Footer />
     </Provider>

@@ -1,6 +1,5 @@
 import AddDestination from "./AddDestination";
 import DestinationList from "./DestinationList";
-import PeopleList from "./PeopleList";
 
 const DestinationIndex = () => {
     return (
@@ -8,7 +7,6 @@ const DestinationIndex = () => {
             <h2 className="text text-center">Travel List</h2>
             <AddDestination />
             <DestinationList />
-            <PeopleList />
         </div>
     );
 };
