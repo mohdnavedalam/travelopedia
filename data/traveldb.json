@@ -1,16 +1,28 @@
 {
   "destination": [
     {
-      "id": "13.138786508978129",
-      "city": "Allahabad",
+      "id": "97.6146813187962",
+      "city": "Aligarh, UP",
       "country": "India",
-      "days": "5.786220190783421"
+      "days": "5"
     },
     {
-      "id": "96.2902321956084",
-      "city": "New Delhi",
+      "id": "72.01680025122033",
+      "city": "Allahabad",
       "country": "India",
-      "days": "3.193703743314368"
+      "days": "4"
+    },
+    {
+      "id": "62.91626780734432",
+      "city": "Lucknow",
+      "country": "India",
+      "days": "8"
+    },
+    {
+      "id": "94.64472671531956",
+      "city": "New Delhi - 110025",
+      "country": "India",
+      "days": "8"
     }
   ],
   "people": [

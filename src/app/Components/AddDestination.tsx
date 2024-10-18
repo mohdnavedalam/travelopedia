@@ -17,7 +17,7 @@ const AddDestination = () => {
                 id: (Math.random() * 100).toString(),
                 city: newCity,
                 country: newCountry,
-                days: (Math.random() * 10 + 1).toString(),
+                days: (Math.floor(Math.random() * (10 - 1) + 1) + 1).toString(),
             });
             setNewCity("");
             setNewCountry("");
