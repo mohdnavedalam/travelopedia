@@ -11,6 +11,7 @@ import './CSS/style.css';
 import DestinationIndex from './app/Components/DestinationIndex';
 import { Provider } from 'react-redux';
 import { store } from './redux/store';
+import RandomDestination from './app/Components/RandomDestination';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
@@ -18,6 +19,7 @@ root.render(
     <Provider store={store}>
       <Header />
       <DestinationIndex />
+      <RandomDestination />
       <FooterMarginTop />
       <Footer />
     </Provider>
