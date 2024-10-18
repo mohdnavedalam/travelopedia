@@ -2,10 +2,11 @@ import { useGetAllPeopleQuery } from "../../api/PeopleApi";
 
 const PeopleList = () => {
     const { data, isLoading, isSuccess, isError } = useGetAllPeopleQuery('');
+    let content;
     if (isLoading) {
-        return <p>Loading ...</p>
+        content = <p>Loading ...</p>;
     } else if (isSuccess) {
-        data.map((people: any) => {
+        content = data.map((people: any) => {
             console.log(people)
             return (
                 <article key={people.id}>
@@ -18,8 +19,11 @@ const PeopleList = () => {
             )
         })
     } else if (isError) {
-        return <p>Error</p>;
+        content = <p>Error</p>;
     }
+    return (
+        <div className="pt-3">{content}</div>
+    );
 };
 
 export default PeopleList;

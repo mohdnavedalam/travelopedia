@@ -5,7 +5,10 @@ export const PeopleApi = createApi({
     baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:5001/" }),
     endpoints: (builder) => ({
         getAllPeople: builder.query({
-            query: () => "people",
+            query: () => ({
+                url: "people",
+                method: "GET"
+            })
         })
     })
 });
