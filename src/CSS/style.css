@@ -1,0 +1,47 @@
+.logo-style {
+    height: 55px;    
+}
+
+.banner-style {
+    display: inline-flex;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid whitesmoke;
+    background-color: #262626; 
+    color: white;
+    position: fixed;
+}
+
+.footer-style {    
+    bottom: 0;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid whitesmoke;
+    margin-top: 10px;
+    background-color: #262626; 
+    color: white;
+    position: fixed
+}
+
+.width-200px {
+    width: 200px;
+}
+
+.image-styles {
+    width: 50%;
+    cursor: pointer;
+}
+
+.image-border-green {
+    border: 1px solid green;
+}
+
+.image-border-red {
+    border: 1px solid red;
+}
+
+.destinationList-margin {
+    margin-top: 10px;
+    margin-left: 10px;
+}

@@ -1,0 +1,28 @@
+{
+  "destination": [
+    {
+      "id": "72.01680025122033",
+      "city": "Allahabad",
+      "country": "India",
+      "days": "4"
+    },
+    {
+      "id": "94.64472671531956",
+      "city": "New Delhi - 110025",
+      "country": "India",
+      "days": "8"
+    }
+  ],
+  "people": [
+    {
+      "id": "1",
+      "name": "Peter Parker",
+      "city": "New York"
+    },
+    {
+      "id": "2",
+      "name": "Clarke Kent",
+      "city": "Metropolis"
+    }
+  ]
+}
