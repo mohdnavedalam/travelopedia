@@ -7,8 +7,8 @@ const RandomDestination = () => {
         content = <p>Loading ...</p>;
     } else if (isSuccess) {
         content = (
-            <div className="text-center border p-3 ms-1">
-                <h4 className="text-white-50">Random Travel Suggestion:</h4>
+            <div className="text-center text-white-50 border p-3 ms-1">
+                <h4>Random Travel Suggestion:</h4>
                 {data.city}, {data.country}
             </div>
         );

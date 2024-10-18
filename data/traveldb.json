@@ -1,22 +1,10 @@
 {
   "destination": [
     {
-      "id": "97.6146813187962",
-      "city": "Aligarh, UP",
-      "country": "India",
-      "days": "5"
-    },
-    {
       "id": "72.01680025122033",
       "city": "Allahabad",
       "country": "India",
       "days": "4"
-    },
-    {
-      "id": "62.91626780734432",
-      "city": "Lucknow",
-      "country": "India",
-      "days": "8"
     },
     {
       "id": "94.64472671531956",
