@@ -1,5 +1,18 @@
 {
-  "destination": [],
+  "destination": [
+    {
+      "id": "13.138786508978129",
+      "city": "Allahabad",
+      "country": "India",
+      "days": "5.786220190783421"
+    },
+    {
+      "id": "96.2902321956084",
+      "city": "New Delhi",
+      "country": "India",
+      "days": "3.193703743314368"
+    }
+  ],
   "people": [
     {
       "id": "1",
